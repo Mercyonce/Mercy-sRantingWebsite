@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("rant.png") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+h1 {
+    font-family: "Fjalla One";
+    font-size: 14pt;
+}
+
+.letting {
+  background: white;
+  padding: 50px 100px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #f8f4e5, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid grey;
+}
+
+#button {
+  display: inline-block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background:  #f8f4e5;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px black, 3px 3px 1px 1px #f7e9b5;
+}
+#button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+::selection {
+  background: white;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid black;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.buttonRight{
+position: absolute;
+top: 0;
+right: 0;
+display: inline-block;
+margin-left: -10px;
+margin-right: 4px;
+margin-bottom: 4px;
+}
+
+.buttonRight2{
+position: absolute;
+top: 0;
+right: 0.05;
+display: inline-block;
+margin-left: -10px;
+margin-right: 4px;
+margin-bottom: 4px;
+}
+
+
+#quote {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#quote td, #quote th {
+  border: 1px solid black;
+  padding: 8px;
+  background-color: #ddd;
+}
+
+#quote tr:nth-child(even){background-color: #f2f2f2;}
+
+#quote tr:hover {background-color: #ddd;}
+
+#quote th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f8f4e5;
+  color: black;
+}
+
+a:link {
+  color: #f8f4e5;
+}
+
+a:visited {
+  color: #f8f4e5;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}

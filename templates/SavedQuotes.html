@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+
+    <div class = "buttonRight">
+        <form action = "/LetItGo2" method="GET">
+        <input type = "submit"  id = "button" value= "Let It Go">
+        </form>
+    </div>
+
+     <div class = "buttonRight2">
+        <form action = "/logout" method="GET">
+        <input type = "submit" id = "button" value= "Log Out">
+        </form>
+     </div>
+
+<table id = "quote">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Quotes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for SavedQuotes in SavedQuotes %}
+                <tr>
+                    <td>{{ SavedQuotes.id }}</td>
+                    <td>{{ SavedQuotes.Quote }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+

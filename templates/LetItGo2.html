@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+    <p>
+       <h1>
+           Write whatever is occupying your mind right now on the box below and press the button for a
+           customized word of encouragement and meditation video to help you let it go.
+       </h1>
+    </p>
+    <div class="letting">
+  <form action = "/LetItGo2" method="POST">
+    <input name= "Name" placeholder="Name" required="" type="text" />
+    <textarea rows="4" cols="50" maxlength="150" name = "Rant" placeholder="Write your Problem or Rant here"></textarea>
+    <input type="submit" id = "button" value= "Let It Go">
+  </form>
+</div>
+</body>
+</html>
